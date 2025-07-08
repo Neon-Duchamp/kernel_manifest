@@ -2,9 +2,13 @@
 <manifest>
   <remote  name="aosp" fetch="https://android-review.googlesource.com/" />
   <remote  name="neon" fetch="https://github.com/Neon-Duchamp" />
+  <remote name="susfs" fetch="https://gitlab.com/simonpunk" />
   <default revision="main-kernel-build-2023" remote="aosp" sync-j="4" />
 
   <superproject name="kernel/superproject" remote="aosp" revision="common-android14-6.1-lts" />
+
+  <!-- Track SUSFS for 6.1 kernel -->
+  <project path="susfs" name="susfs4ksu" remote="susfs" revision="gki-android14-6.1" />
 
   <!-- Track MediaTek Generic Kernel bazel rules -->
   <project path="build/kernel" name="kernel/build" remote="aosp">
