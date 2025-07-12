@@ -22,7 +22,7 @@
   </project>
 
   <!-- Track MediaTek Generic Kernel projects -->
-  <project remote="neon" name="android_kernel_6.1" path="kernel-6.1" revision="lineage-22.2">
+  <project remote="neon" name="kernel_xiaomi_mt6897" path="kernel-6.1" revision="15">
     <linkfile src="build.config.constants" dest="build.config.constants" />
   </project>
   <project remote="neon" name="android_kernel_device_modules_6.1" path="kernel_device_modules-6.1" revision="lineage-22.2">
